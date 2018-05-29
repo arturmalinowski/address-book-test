@@ -20,7 +20,7 @@ public class FileReaderTest {
 
     @Test
     public void canReadFile() {
-        File file = new File("src/test/resources/AddressBook");
+        File file = new File("src/main/resources/AddressBook");
         List<String> addressBook = underTest.readFrom(file);
         assertThat(addressBook.size(), is(5));
     }

@@ -9,7 +9,7 @@ import java.util.List;
 public class AddressBookRunner {
 
     public static void main(String[] args) {
-        File file = ((args.length == 0) ? new File("src/test/resources/AddressBook") : new File(args[0]));
+        File file = new File(args[0]);
         FileReader fileReader = new FileReader();
 
         Parser parser = new Parser();

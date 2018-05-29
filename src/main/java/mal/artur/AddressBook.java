@@ -19,7 +19,7 @@ public class AddressBook {
 
     public Integer getNumberOf(Gender gender) {
         return contacts.stream()
-                .filter(c -> c.getGender().equals(gender))
+                .filter(c -> c.getGender() == gender)
                 .collect(Collectors.toList())
                 .size();
     }
