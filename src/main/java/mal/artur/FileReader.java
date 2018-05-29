@@ -11,8 +11,6 @@ public class FileReader {
 
     private List<String> lines;
 
-    public FileReader(){}
-
     public List<String> readFrom(File file){
         lines = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new java.io.FileReader(file))) {
