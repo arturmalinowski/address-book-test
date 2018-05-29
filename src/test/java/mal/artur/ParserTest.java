@@ -23,7 +23,7 @@ public class ParserTest {
 
     @Test
     public void canParseText() {
-        List<String> lineOfText = new ArrayList<String>();
+        List<String> lineOfText = new ArrayList<>();
         lineOfText.add("Artur, Male, 12/12/1212");
 
         Contact contact = underTest.toContacts(lineOfText).get(0);
