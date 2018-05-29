@@ -24,12 +24,12 @@ public class ParserTest {
     @Test
     public void canParseText() {
         List<String> lineOfText = new ArrayList<>();
-        lineOfText.add("Artur, Male, 12/12/1212");
+        lineOfText.add("Artur, Male, 12/12/12");
 
         Contact contact = underTest.toContacts(lineOfText).get(0);
 
         assertThat(contact.getName(), is("Artur"));
         assertThat(contact.getGender(), is(Gender.Male));
-        assertThat(contact.getDate(), is(LocalDate.of(1212,12,12)));
+        assertThat(contact.getDate(), is(LocalDate.of(2012,12,12)));
     }
 }

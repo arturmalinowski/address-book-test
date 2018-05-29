@@ -45,4 +45,10 @@ public class AddressBookTest {
 
         assertThat(ageDifferenceBetween, is(396));
     }
+
+    @Test
+    public void canGetContactByName() {
+        Contact artur = underTest.getContactByName("Artur");
+        assertThat(artur.getName(), is("Artur"));
+    }
 }

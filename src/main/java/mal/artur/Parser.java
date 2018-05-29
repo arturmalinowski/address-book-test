@@ -21,7 +21,7 @@ public class Parser {
     }
 
     private LocalDate getDate(String date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yy");
         LocalDate localDate = LocalDate.parse(date, formatter);
         return localDate;
     }

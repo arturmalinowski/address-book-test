@@ -35,4 +35,8 @@ public class AddressBook {
     public Integer getAgeDifferenceBetween(Contact firstContact, Contact secondContact) {
         return Math.toIntExact(DAYS.between(firstContact.getDate(), secondContact.getDate()));
     }
+
+    public Contact getContactByName(String name) {
+        return contacts.stream().filter(c -> c.getName().contains(name)).findFirst().get();
+    }
 }
